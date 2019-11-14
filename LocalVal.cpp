@@ -7,7 +7,8 @@ int main(void)
 	{
 		int num = 0;
 		num++;
-		printf("%d번째 반복, 지역변수 num은 %d \n", cnt + 1, num);
+		printf("%d번째 반복, 지역변수 num은 %d \n", cnt + 1, num); // 반복이 이뤄질 때마다 변수  num은 메모리상에 할당되고 
+		                                                            // 소멸된다. 그래서 10행은 항상 1이다.
 	}
 	if (cnt == 3)
 	{
